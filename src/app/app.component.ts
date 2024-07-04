@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent implements OnInit {
   title = 'promisis';
   public person_Data?: CountryInterface;
-  public name?: string = 'Your Name';
+  public name?: string = 'Enter Your name';
   constructor(private country_service: CountryPredictorService) {}
   ngOnInit(): void {
     this.country_service.getData(this.name).then((response) => {

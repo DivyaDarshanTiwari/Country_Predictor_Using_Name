@@ -1,0 +1,35 @@
+#body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 96vh;
+}
+
+form input {
+  border-radius: 2px;
+  padding: 16px;
+  margin: 2px;
+}
+
+#submit{
+    border: 0cap;
+}
+#submit:hover {
+  background-color: rgb(217, 129, 21);
+}
+
+#submit:active {
+  background-color: bisque;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.card_container {
+  width: 40%;
+}

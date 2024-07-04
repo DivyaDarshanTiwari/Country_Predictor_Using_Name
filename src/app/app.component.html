@@ -1,13 +1,18 @@
-<form>
-  <label for="name">Enter Your name</label>
-  <input type="text" name="name" id="name" [(ngModel)]="name" />
-  <input type="button" (click)="gettingData()" value="Submit" />
-</form>
+<div id="body">
+  <form id="form">
+    <input type="text" name="name" id="name" [(ngModel)]="name" />
+    <input type="button" (click)="gettingData()" value="Submit" id="submit" />
+  </form>
 
-<h3>Here is What we Found</h3>
-<p>Name:{{ person_Data?.name }}</p>
-<div *ngFor="let country of person_Data?.country">
-  <div><b>countryId:</b> {{ country.country_id }}</div>
-  <span>and it</span>
-  <div><i>Probability: </i>{{ country.probability }}</div>
+  <div class="card_container">
+    <h2>Here is What we Found</h2>
+    <h4>Name:{{ person_Data?.name }}</h4>
+    <div class="card">
+      <div *ngFor="let country of person_Data?.country">
+        <div><b>countryId:</b> {{ country.country_id }}</div>
+        <div>and it</div>
+        <div><i>Probability: </i>{{ country.probability }}</div>
+      </div>
+    </div>
+  </div>
 </div>
