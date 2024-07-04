@@ -1,0 +1,13 @@
+<form>
+  <label for="name">Enter Your name</label>
+  <input type="text" name="name" id="name" [(ngModel)]="name" />
+  <input type="button" (click)="gettingData()" value="Submit" />
+</form>
+
+<h3>Here is What we Found</h3>
+<p>Name:{{ person_Data?.name }}</p>
+<div *ngFor="let country of person_Data?.country">
+  <div><b>countryId:</b> {{ country.country_id }}</div>
+  <span>and it</span>
+  <div><i>Probability: </i>{{ country.probability }}</div>
+</div>
