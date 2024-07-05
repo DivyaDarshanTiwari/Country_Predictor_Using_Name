@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  gettingData() {
+  public gettingData() {
     this.country_service.getData(this.name).then((response) => {
       this.person_Data = response;
       console.log(this.person_Data);
